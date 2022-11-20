@@ -1,0 +1,26 @@
+Virtual Environment 
+    python -m venv venv
+    Command Palette (view or ctrl+shift+p) '+ Enter Interpreter path' => './venv/bin/python'
+    terminal => 'source venv/bin/activate'
+
+FASTAPI 
+    pip install fastapi[all] (in virtual environment)
+
+Start Server 
+    uvicorn main:app
+    uvicorn app.main:app --reload (updates server automatically)
+
+
+deploying to vercel:
+https://blog.logrocket.com/deploying-fastapi-applications-to-vercel/?ref=morioh.com&utm_source=morioh.com
+
+need to use uvicorn: 
+top layer in main.py
+    import uvicorn
+
+    if __name__ == "__main__":
+    uvicorn.run("server.api:app", host="0.0.0.0", port=8000, reload=True)
+need a vercel json
+
+vercel login 
+vercel .
