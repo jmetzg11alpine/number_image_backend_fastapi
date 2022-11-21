@@ -1,0 +1,1 @@
+{"id":"e5239bee-d410-4962-8242-fb69cdc21b64","space":37049,"runtime":"python3.9","name":"image_backend","path":"tpcwio","project":"a0499p4s","account":"144798365827","region":"eu-central-1","deps":["fastapi==0.86.0"],"envs":null,"public":true,"log_level":"off","cron":""}
